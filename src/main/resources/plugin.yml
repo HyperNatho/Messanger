@@ -1,0 +1,14 @@
+main: me.hypernatho.messenger.Messenger
+name: Messenger
+author: HyperNatho
+version: ${pom.version}
+commands:
+  message:
+    description: Sends a private message to the selected player.
+    aliases: [msg, m, pm, t, tell, w, whisper]
+  reply:
+    description: Replies to the latest private message.
+    aliases: [r]
+  spy:
+    description: Allows you to see all (not-so) private messages!
+    aliases: [ss, socialspy, messagespy, ms]
