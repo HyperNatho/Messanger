@@ -1,2 +1,2 @@
 # Messanger
-Priavte messaging system for spigot servers. Includes SocialSpy.
+A private messaging system for spigot servers. Includes SocialSpy and complete customiseation.
