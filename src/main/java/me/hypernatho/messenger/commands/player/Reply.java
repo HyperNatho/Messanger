@@ -55,6 +55,11 @@ public class Reply extends BaseCommand {
             }
         }
 
+        if (Messenger.getInstance().getConfig().get("console-log") != null &&
+                Messenger.getInstance().getConfig().getBoolean("console-log") == true) {
+            Bukkit.getConsoleSender().sendMessage(message);
+        }
+
         if (Messenger.getCooldowns().containsKey(player.getName())) {
             Messenger.getCooldowns().remove(player.getName());
         }
