@@ -1,5 +1,4 @@
 package me.hypernatho.messenger.listeners;
-// Copyright (c) 2015 MinecraftArcade. All Rights Reserved.
 
 import me.hypernatho.messenger.Messenger;
 import org.bukkit.event.EventHandler;
