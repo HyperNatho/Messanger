@@ -64,4 +64,16 @@ public class Messenger extends JavaPlugin {
             pm.registerEvents(new Quit(), this);
         }
     }
+
+    @Override
+    public void onDisable() {
+        List<String> list = getConfig().getStringList("spies");
+
+        for (Player spy : spies) {
+            list.add(spy.getUniqueId().toString());
+        }
+
+        getConfig().set("spies", list);
+        saveConfig();
+    }
 }

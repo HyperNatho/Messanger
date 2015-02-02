@@ -13,17 +13,11 @@ public class Spy extends BaseCommand {
         if (Messenger.getSpies().contains(player)) {
             Messenger.getSpies().remove(player);
             tell(player, Messenger.getProperties().getProperty("spyDisabled"));
-
-            Messenger.getInstance().getConfig().getStringList("spies").remove(player.getUniqueId().toString());
-            Messenger.getInstance().saveConfig();
             return;
         }
 
         Messenger.getSpies().add(player);
         tell(player, Messenger.getProperties().getProperty("spyEnabled"));
-
-        Messenger.getInstance().getConfig().getStringList("spies").add(player.getUniqueId().toString());
-        Messenger.getInstance().saveConfig();
     }
 
     @Override
